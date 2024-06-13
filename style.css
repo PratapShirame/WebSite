@@ -1,3 +1,10 @@
 body{
     background-color: aqua;
+
+}
+.navbar{
+    display: flex;
+    background-color: black;
+    text-align: center;
+    color: white;
 }
