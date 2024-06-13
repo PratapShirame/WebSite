@@ -19,12 +19,16 @@ header{
 }
 .header-Section{
     display: flex;
-    align-items: center; /* Aligns children vertically */
+    align-items: center; 
     justify-content: space-between;
     background-color: transparent;
-    height: 50px;
-    width: 100%;
-    padding: 22px 19px 26px 20px;
+    width: auto;
+    padding: 10px 10px;
+    overflow: hidden;
+}
+.header-content {
+    display: flex;
+    align-items: center; 
 }
 .logo-image{
     max-width: 50px;
@@ -32,41 +36,36 @@ header{
     padding: 10px 10px 10px 25px;
 }
 .logo-image img {
-    max-width: 50px; /* Adjust size as needed */
+    max-width: 50px; 
     height: auto;
-    border-radius: 10px; /* Optional: adds rounded corners */
+    border-radius: 10px; 
 }
 .site-name {
-    font-size: 20px; /* Adjust the font size as needed */
-    color: white; /* Text color */
-    margin-bottom: 10px; /* Space between site name and logo */
+    font-size: 20px; 
+    color: white; 
+    
 }
-
 .navbar {
     display: flex;
     justify-content: flex-end;
-    margin: 0px 50px 0px 0px;
+    margin: 0px 50px;
 }
-
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 20px; /* Spacing between items */
+    gap: 20px; 
     padding: 0;
     margin: 0;
 }
-
-/* Navigation items */
 .navbar ul li a {
     color: white;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 20px;
     padding: 6px 7px;
     transition: background 0.3s;
     border-radius: 5px;
 }
-
 .navbar ul li a:hover {
-    background-color: #11cdee; /* Darker background on hover */
+    background-color: #11cdee; 
     color: black;
 }
