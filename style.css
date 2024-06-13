@@ -1,10 +1,50 @@
-body{
-    background-color: aqua;
-
+html, body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100%; /* Full height */
+    width: 100%; /* Full width */
+    overflow: hidden; /* Hide any overflow */
 }
-.navbar{
+
+body {
+    background-image: url('images/background2.jpg'); /* Update with your image path */
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-repeat: no-repeat; /* No repeating the image */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Optional: keeps the background fixed when scrolling */
+}
+.header {
+   
+    height: 50px;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+}
+
+
+.navbar {
     display: flex;
-    background-color: black;
-    text-align: center;
+    justify-content: flex-end;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    padding: 14px 20px;
+}
+
+.navbar ul li a {
     color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 5px;
+}
+
+.navbar ul li a:hover {
+    background-color: #ddd;
+    color: black;
 }
