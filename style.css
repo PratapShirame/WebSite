@@ -1,50 +1,72 @@
 html, body {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    height: 100%; /* Full height */
-    width: 100%; /* Full width */
-    overflow: hidden; /* Hide any overflow */
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+    width: 100%; 
+    overflow: hidden; 
 }
 
 body {
-    background-image: url('images/background2.jpg'); /* Update with your image path */
-    background-size: cover; /* Ensure the image covers the entire area */
-    background-repeat: no-repeat; /* No repeating the image */
-    background-position: center; /* Center the image */
-    background-attachment: fixed; /* Optional: keeps the background fixed when scrolling */
+    background-image: url('images/background4.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: fixed; 
 }
-.header {
-   
+header{
+    height: 75px;
+    width: 100%;
+}
+.header-Section{
+    display: flex;
+    align-items: center; /* Aligns children vertically */
+    justify-content: space-between;
+    background-color: transparent;
     height: 50px;
     width: 100%;
-    padding: 10px 10px 10px 10px;
+    padding: 22px 19px 26px 20px;
 }
-
+.logo-image{
+    max-width: 50px;
+    height: auto;
+    padding: 10px 10px 10px 25px;
+}
+.logo-image img {
+    max-width: 50px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px; /* Optional: adds rounded corners */
+}
+.site-name {
+    font-size: 20px; /* Adjust the font size as needed */
+    color: white; /* Text color */
+    margin-bottom: 10px; /* Space between site name and logo */
+}
 
 .navbar {
     display: flex;
     justify-content: flex-end;
+    margin: 0px 50px 0px 0px;
 }
 
 .navbar ul {
-    list-style-type: none;
-    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Spacing between items */
     padding: 0;
+    margin: 0;
 }
 
-.navbar ul li {
-    display: inline;
-    padding: 14px 20px;
-}
-
+/* Navigation items */
 .navbar ul li a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
-    padding: 5px 5px;
+    font-size: 22px;
+    padding: 6px 7px;
+    transition: background 0.3s;
+    border-radius: 5px;
 }
 
 .navbar ul li a:hover {
-    background-color: #ddd;
+    background-color: #11cdee; /* Darker background on hover */
     color: black;
 }
