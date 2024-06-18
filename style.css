@@ -7,11 +7,15 @@ html, body {
 }
 
 body {
+    margin: 0; 
+    padding: 0; 
+    font-family: Arial, sans-serif; 
     background-image: url('images/background1.jpg'); 
     background-size: cover;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed; 
+    background-attachment: fixed;
+    overflow-y: auto; 
 }
 header{
     height: 50px;
@@ -68,4 +72,77 @@ header{
 .navbar ul li a:hover {
     background-color: #11cdee; 
     color: black;
+}
+.carausel{
+    margin: 10px 10px;
+    padding: 10px 10px;
+    height: 400px;
+    width: auto;
+    display: flex;
+}
+.carausel-2{
+    margin: 10px 10px;
+    padding: 10px 10px;
+    height: 400px;
+    width: 50%;
+    color: #fff;
+    text-align: center;
+}
+.profile{
+    margin: 10px;
+    padding: 10px;
+    height: 35px;
+    width: auto;
+}
+.image{
+    height: auto;
+    width: auto;
+}
+.image-1{
+    margin: 10px;
+    padding: 10ox;
+    width: 20px;
+    height: 20px;
+}
+
+.details-2{
+    margin: 10px;
+    padding: 10px;
+    height: 35px;
+    width: auto;
+}
+.carausel-3{
+    margin: 10px 10px;
+    padding: 10px 10px;
+    height: 400px;
+    width: 50%;
+    color: #fff;
+    text-align: center;
+}
+.textcontent{
+    padding: 10px ;
+    color: aquamarine;
+}
+.heading{
+    font-size: 20px;
+}
+.section{
+    margin: 10px 10px;
+    padding: 10px 10px;
+    height: 400px;
+    width: 100%;
+    color: #fff;
+}
+
+.section-1 {
+    margin: 10px 10px;
+    padding: 10px 10px;
+    height: 400px;
+    width: 100%;
+    color: #fff;
+}
+.details-summurry{
+    text-align: justify;
+    font-size: 15px;
+    color: aqua;
 }
