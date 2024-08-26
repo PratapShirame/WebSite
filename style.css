@@ -1,148 +1,126 @@
-html, body {
-    margin: 0; 
-    padding: 0; 
-    height: 100%; 
-    width: 100%; 
-    overflow: hidden; 
+body {
+    background-color: white;
+    color: black;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 60px; /* Add padding to avoid overlap with fixed header */
 }
 
-body {
-    margin: 0; 
-    padding: 0; 
-    font-family: Arial, sans-serif; 
-    background-image: url('images/background1.jpg'); 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 40px;
+}
+
+.navbar {
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.border:hover {
+    border: 2px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.list-item {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    display: flex;
+    background-image: url('https://elements-resized.envatousercontent.com/envato-shoebox/e32a/dc8e-784d-40c0-a182-a43d31bae6dd/DSC_07663.jpg?w=800&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=63dcbdd43d220a7d1385ce6fcfed9d7c8ef3e150c8553eb7b9b6a0f46b588f93');
+    background-size: cover;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    gap: 10px;
+    height: 600px;
+}
+
+.section-box {
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.tileimge {
+    height: 80%;
+    background-image: url("https://elements-resized.envatousercontent.com/envato-shoebox/236b/4566-f35b-48e1-9d53-271952e7c3a4/CEL_5396.jpg?w=1600&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=96d1a9ab12a0cb5dd4f57e5f2c941084388a5ff3025efc053d0bfb14803a6f3e");
+    background-size: cover;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.titelbox h2 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.paragf {
+    display: flex;
+    justify-content: space-between;
+}
+
+.paragf a {
+    color: black;
+    font-size: 1rem;
+}
+
+.bookorder {
+    color: #007185;
+}
+
+.detail-content {
+    height: 500px;
+    background-image: url("https://elements-resized.envatousercontent.com/elements-cover-images/9fa2e0c9-0ed8-4004-860d-47829ac48cd1?w=2038&cf_fit=scale-down&q=85&format=auto&s=32c546cb748bb07decfa7e192dda74f25357f1533420e4b798ac7643e667bc76");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
-    overflow-y: auto; 
-}
-header{
-    height: 50px;
-    width: 100%;
-    margin: 10px 10px;
-    padding: 10px 10px;    
-}
-.header-Section{
-    display: flex;
-    align-items: center; 
-    justify-content: space-between;
-    background-color: transparent;
-    height: 50px;
-}
-.header-content {
-    display: flex;
-    align-items: center; 
-}
-.logo-image{
-    max-width: 50px;
-    height: auto;
-    padding: 10px 10px 10px 25px;
-}
-.logo-image img {
-    max-width: 50px; 
-    height: auto;
-    border-radius: 10px; 
-}
-.site-name {
-    font-size: 20px; 
-    color: white; 
-    
-}
-.navbar {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0px 50px;
-}
-.navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 20px; 
-    padding: 0;
-    margin: 0;
-}
-.navbar ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 6px 7px;
-    transition: background 0.3s;
-    border-radius: 5px;
-}
-.navbar ul li a:hover {
-    background-color: #11cdee; 
-    color: black;
-}
-.carausel{
-    margin: 10px 10px;
-    padding: 10px 10px;
-    height: 400px;
-    width: auto;
-    display: flex;
-}
-.carausel-2{
-    margin: 10px 10px;
-    padding: 10px 10px;
-    height: 400px;
-    width: 50%;
-    color: #fff;
-    text-align: center;
-}
-.profile{
-    margin: 10px;
-    padding: 10px;
-    height: 35px;
-    width: auto;
-}
-.image{
-    height: auto;
-    width: auto;
-}
-.image-1{
-    margin: 10px;
-    padding: 10ox;
-    width: 20px;
-    height: 20px;
-}
-
-.details-2{
-    margin: 10px;
-    padding: 10px;
-    height: 35px;
-    width: auto;
-}
-.carausel-3{
-    margin: 10px 10px;
-    padding: 10px 10px;
-    height: 400px;
-    width: 50%;
-    color: #fff;
-    text-align: center;
-}
-.textcontent{
-    padding: 10px ;
-    color: aquamarine;
-}
-.heading{
-    font-size: 20px;
-}
-.section{
-    margin: 10px 10px;
-    padding: 10px 10px;
-    height: 400px;
-    width: 100%;
-    color: #fff;
-}
-
-.section-1 {
-    margin: 10px 10px;
-    padding: 10px 10px;
-    height: 400px;
-    width: 100%;
-    color: #fff;
-}
-.details-summurry{
-    text-align: justify;
-    font-size: 15px;
-    color: aqua;
 }
